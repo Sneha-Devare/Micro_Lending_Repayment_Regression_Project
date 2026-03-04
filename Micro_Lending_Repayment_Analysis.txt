@@ -1,0 +1,53 @@
+THE CODERS ORBIT | CORPORATE PROJECT REPORT
+
+PROJECT OVERVIEW & PROBLEM STATEMENT
+A micro‑finance institution issues small business loans across urban and rural markets. Management seeks to estimate the expected repayment time in days for each borrower, considering demographic, financial, and behavioral factors. The regression model aims to improve cash flow forecasting and loan recovery planning.
+
+DATASET & COLUMN DESCRIPTION
+Loan_ID – unique identifier for each loan.
+Business_Type – category of borrower enterprise such as Grocery, Tailoring, Farming, Food Stall, Handicraft, Services.
+Repayment_Frequency – repayment schedule type (Weekly, Biweekly, Monthly).
+City_Tier – borrower’s city classification (Tier1, Tier2, Tier3, Rural).
+Repeat_Borrower – indicator showing if the borrower had prior loans.
+Group_Loan – indicates whether the loan is part of a group lending scheme.
+Loan_Amount – sanctioned amount in rupees.
+Interest_Rate_pct – interest rate applied on the loan.
+Tenure_Months – contractual tenure length in months.
+Income_Monthly – reported average monthly income of borrower.
+Credit_Score – creditworthiness score of the borrower (300–900 scale).
+Collateral_Value – declared value of pledged collateral in rupees.
+Distance_to_Branch_km – physical distance from borrower to branch office.
+Financial_Literacy_Score – borrower’s financial awareness score (0–100).
+Repayment_Time_Days – target variable representing actual repayment duration.
+
+EXPLORATORY DATA ANALYSIS (EDA)
+Univariate Analysis
+– Review the spread of repayment times and loan amounts.
+– Analyze borrower income distribution and collateral value.
+– Study credit score and financial literacy score distributions.
+
+Bivariate Analysis
+– Examine association between loan amount and repayment duration.
+– Assess if higher financial literacy results in faster repayment.
+– Compare repayment times across business types and repayment frequencies.
+– Evaluate relationship between interest rate and repayment time.
+
+Multivariate Analysis
+– Explore joint impact of income, credit score, and collateral value.
+– Determine if group loans and repeat borrowers collectively reduce repayment time.
+– Identify geographic patterns in repayment behavior across city tiers.
+
+BUSINESS INSIGHT PROMPTS
+– Which borrower profiles tend to repay faster?
+– How do repayment frequencies influence total repayment duration?
+– Does collateral strength meaningfully lower delays?
+– Are rural borrowers exhibiting different patterns compared to urban borrowers?
+
+MODELING EXPECTATIONS
+Perform missing value treatment, encode categorical variables, and normalize highly skewed monetary columns. Introduce engineered ratios such as collateral‑to‑loan amount and income‑to‑loan amount to capture repayment capacity.
+
+MODEL EVALUATION METRICS
+Use RMSE to evaluate absolute accuracy of predicted repayment days. MAE provides interpretable deviation for operational monitoring. R² and Adjusted R² quantify variance explained. For financial risk applications, prioritize lower MAE and reasonable R² balance.
+
+BUSINESS DECISION & OUTCOME
+Accurate repayment time prediction allows the micro‑finance institution to optimize collection scheduling, manage liquidity buffers, and design borrower‑specific repayment structures improving overall portfolio health.
